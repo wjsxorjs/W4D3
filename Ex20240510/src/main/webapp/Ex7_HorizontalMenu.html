@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ex7_HorizontalMenu</title>
+<style>
+    body{
+        padding: 0;
+        margin: 0;
+    }
+
+    #header{
+        height: 80px;
+        background-color: rgb(46, 46, 46);
+    }
+
+    #nav{
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        font: 22px Arial;
+        line-height: 80px;
+    }
+    #nav>li{
+        display: inline-block;
+        margin-left: 20px;
+    }
+    /*li태그 안에 있는 a태그를 선택하여 글꼴의 색을 흰색으로 지정하고 밑줄을 없애자.*/
+    #nav>li>a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+
+    #nav>li>a:hover{
+        color: rgb(180, 255, 255);
+    }
+
+    .selected{
+        color: rgb(180, 255, 255) !important;
+        font-weight: bold;
+        border-bottom: 4px solid rgb(180, 255, 255);
+    }
+
+</style>
+</head>
+<body>
+    <article>
+        <header id="header">
+            <ul id="nav">
+                <li><a href="" class="selected">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">e-Biz</a></li>
+                <li><a href="">Board</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </header>
+    </article>
+</body>
+</html>
