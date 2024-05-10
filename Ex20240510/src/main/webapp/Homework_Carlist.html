@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Homework_Carlist</title>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: rgb(35, 35, 35);
+        color: rgb(255, 255, 255);
+    }
+    #wrap{
+        width: 700px;
+        border: 1px solid rgb(255, 255, 255);
+        margin: 50px auto;
+        margin-bottom: 0px;
+    }
+    #wrap a{
+        color: rgb(255, 255, 255);
+    }
+    #wrap>header>h1{
+        margin: 10px;
+        font: bold 35px sans-serif;
+    }
+    ul#carList{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    li.car{
+        width: 170px;
+        border: 1px solid rgb(255, 255, 255);
+        text-align: center;
+        padding-bottom: 10px;
+        /* margin-left: 46px;
+        margin-bottom: 46px; */
+        margin: 0 0 46px 46px;
+        display: inline-block;
+    }
+    li.car>span>a{
+        font: 12px sans-serif;
+        text-decoration: none;
+    }
+    li.car>a{
+        display: block;
+        width: 160px;
+        height: 120px;
+        border: 5px solid rgb(35, 35, 35);
+    }
+    li.car>a:hover{
+        border-color:rgb(255, 0, 0);
+    }
+</style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1>자동차 목록</h1>
+        </header>
+        <ul id="carList">
+            <li class="car">
+                <a href="">
+                    <img src="./images/Audi-R8.jpg" />
+                </a>
+                <span><a href="">Audi-R8</a></span>
+            </li>
+            <li class="car">
+                <a href="">
+                    <img src="./images/Aston_Martin-One-77.jpg" />
+                </a>
+                <span><a href="">Aston Martin One 77</a></span>
+            </li>
+            <li class="car">
+                <a href="">
+                    <img src="./images/Bentley-Continental_GTC.jpg" />
+                </a>
+                <span><a href="">Bentley Continental GTC</a></span>
+            </li>
+            <li class="car">
+                <a href="">
+                    <img src="./images/BMW-Z4.jpg" />
+                </a>
+                <span><a href="">BMW Z4</a></span>
+            </li>
+            <li class="car">
+                <a href="">
+                    <img src="./images/Ferrari-458_Italia.jpg" />
+                </a>
+                <span><a href="">Ferrari 458 Italia</a></span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

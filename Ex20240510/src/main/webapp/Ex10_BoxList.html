@@ -7,15 +7,17 @@
     body{
         background-color: rgb(0, 0, 0);
         color: rgb(255, 255, 255);
-        margin: 0;
-        padding: 0;
     }
     #carticle{
-        margin: 0;
-        padding: 0;
-        width: 60%;
+        width: 680px;
         border: 1px solid rgb(255, 255, 255);
-        
+        margin: 5% auto;
+
+    }
+    #carticle>#header>h2{
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 10px;
     }
     #carticle>.box{
         display: inline-block;
@@ -24,6 +26,7 @@
         border: 1px solid rgb(255, 255, 255);
         text-align: center;
         padding: 4px;
+        margin: 0px 0px 50px 40px;
     }
 
     #carticle>.box>a{
@@ -36,17 +39,37 @@
         font-size: 13px;
     }
 
-    #audi{
-        background: url("./images/Audi-R8.jpg") no-repeat;
-    }
-
-    #carticle>#box1>a:hover{
+    #carticle>.box>a:hover{
         border: 2px solid red;
         width: 156px;
         height: 116px;
         background-position: -2px -2px;
     }
     
+    #audi{
+        background: url("./images/Audi-R8.jpg") no-repeat;
+    }
+    #aston{
+        background: url("./images/Aston_Martin-One-77.jpg") no-repeat;
+    }
+    #jaguar{
+        background: url("./images/Jaguar-XJ.jpg") no-repeat;
+    }
+    #bmw{
+        background: url("./images/BMW-Z4.jpg") no-repeat;
+    }
+    #bentley{
+        background: url("./images/Bentley-Continental_GTC.jpg") no-repeat;
+    }
+    #hyundai{
+        background: url("./images/Hyundai-Genesis.jpg") no-repeat;
+    }
+    #lambo{
+        background: url("./images/Lamborghini-Reventon.jpg") no-repeat;
+    }
+    #ferrari{
+        background: url("./images/Ferrari-458_Italia.jpg") no-repeat;
+    }
 
 </style>
 </head>
@@ -55,35 +78,35 @@
         <header id="header">
             <h2>자동차 목록</h2>
         </header>
-        <div id="box1" class="box">
+        <div class="box">
             <a href="" id="audi"></a>
             <label for="audi">Audi-R8</label>
         </div>
-        <div id="box2" class="box">
+        <div class="box">
             <a href="" id="aston"></a>
             <label for="aston">Aston martin One 77</label>
         </div>
-        <div id="box3" class="box">
+        <div class="box">
             <a href="" id="jaguar"></a>
             <label for="jaguar">Jaguar XJ</label>
         </div>
-        <div id="box4" class="box">
+        <div class="box">
             <a href="" id="bmw"></a>
             <label for="bmw">BMW Z4</label>
         </div>
-        <div id="box5" class="box">
+        <div class="box">
             <a href="" id="bentley"></a>
             <label for="bentley">Bentley Continetal GTC</label>
         </div>
-        <div id="box6" class="box">
+        <div class="box">
             <a href="" id="hyundai"></a>
             <label for="hyundai">Hyundai Genesis</label>
         </div>
-        <div id="box7" class="box">
+        <div class="box">
             <a href="" id="lambo"></a>
             <label for="lambo">lamborghini Reventon</label>
         </div>
-        <div id="box8" class="box">
+        <div class="box">
             <a href="" id="ferrari"></a>
             <label for="ferrari">Ferrari 458 Italia</label>
         </div>
