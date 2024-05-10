@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ex1_ImgVerticalMenu</title>
+<style>
+    ul#menu{
+        list-style: none; /*리스트 앞에(list-style) 점을 없앤다(none).*/
+        width: 300px;
+        padding: 0; /*안쪽여백을 모두 0으로 설정한다.*/
+        margin: 0; /*바깥쪽여백을 모두 0으로 설정한다.*/
+
+
+        /* border: 5px ridge red; */
+    }
+    /*li 태그들의 너비를 ul 태그와 같게하고, 높이는 100px로 지정*/
+    #menu>li{
+        width: 100%;
+        height: 100px;
+        
+        /* border: 5px dotted red; */
+    }
+
+    /*
+        li태그 안에 있는 a태그의 크기를 li와 같도록 하고,
+        문자열들은 보이지 않도록 하자!
+    */
+    #menu>li>a{
+        display: block; /*블록레벨화 시킨다.*/
+        width: 100%;
+        height: 100%;
+        text-indent: -9999px;
+        
+        /* border: 5px dotted blue; */
+    }
+
+    /*
+        아이디가 mail인 요소 안에 a태그의 배경 이미지를
+        images/mail.gif로 지정한다.
+    */
+    #mail>a{
+        background-image: url("images/mail.gif");
+    }
+
+
+</style>
+</head>
+<body>
+    <article>
+        <header>
+            <h2>이미지를 이용한 수직메뉴</h2>
+        </header>
+        <div>
+            <ul id="menu">
+                <li id="mail"><a href="">MAIL</a></li>
+                <li id="blog"><a href="">BLOG</a></li>
+                <li id="cafe"><a href="">CAFE</a></li>
+                <li id="kin"><a href="">지식IN</a></li>
+            </ul>
+        </div>
+    </article>
+</body>
+</html>
